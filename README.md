@@ -1,4 +1,4 @@
-# Final project for IITU Java EE course
+# Final project for IITU Web technologies and Java EE courses
 
 done by Kazakpayev Solomon IT2-2116
 
