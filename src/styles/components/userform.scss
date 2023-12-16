@@ -1,0 +1,66 @@
+.useredit{
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+
+  &-inner{
+
+  }
+
+  &-banner{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 40vh;
+  }
+
+  &-info {
+    &-top {
+      position: absolute;
+      top: 27vh;
+      margin-left: 20px;
+    }
+
+    &-main{
+      margin-top: 80px;
+      margin-left: 40px;
+      width: 100%;
+
+      &-title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        button{
+          margin-left: 20px;
+          height: 40px;
+        }
+      }
+
+      &-item{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+
+        span{
+          font-family: 'Istok Web', sans-serif;
+        }
+      }
+
+      &-buttons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 47%;
+        margin-top: 30px;
+
+        button:first-child{
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}

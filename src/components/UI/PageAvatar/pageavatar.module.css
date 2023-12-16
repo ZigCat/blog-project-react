@@ -1,0 +1,18 @@
+.avatar{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    background-color: rgb(0, 191, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img{
+    width: 100px;
+    height: 100px;
+    filter: invert(97%) sepia(74%) saturate(5825%) hue-rotate(183deg) brightness(125%) contrast(100%);
+}

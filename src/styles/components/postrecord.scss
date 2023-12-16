@@ -1,0 +1,66 @@
+.post{
+  width: 100%;
+  &-inner{
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    transition: 0.2s linear all;
+    min-height: 200px;
+
+    &:hover{
+      background-color: rgba(0, 0, 0, 0.1);
+      transition: 0.2s linear all;
+    }
+  }
+
+  &-body{
+    &-user{
+      margin: 40px 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      cursor: pointer;
+
+      &:hover{
+        h4{
+          color: rgba(0, 0, 0, 0.5);
+          transition: 0.2s linear all;
+        }
+
+        h6{
+          color: rgba(0, 191, 255, 0.5);
+          transition: 0.2s linear all;
+        }
+      }
+
+      h4{
+        font-size: 20px;
+        margin: 0 5px;
+        transition: 0.2s linear all;
+      }
+
+      h6{
+        font-size: 17px;
+        color: rgb(0, 191, 255);
+        font-weight: 600;
+        margin: 0;
+        transition: 0.2s linear all;
+      }
+
+      span{
+        font-size: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 600;
+        margin-left: 5px;
+      }
+    }
+
+    &-content{
+      p{
+        font-size: 17px;
+      }
+    }
+  }
+}

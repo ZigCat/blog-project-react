@@ -1,0 +1,52 @@
+.homepage{
+  &-inner{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-top{
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &-category{
+      text-align: center;
+      padding: 10px 0;
+      transition: 0.2s linear all;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+
+      h2{
+        font-size: 20px;
+      }
+
+      &-highlight{
+        width: 20%;
+        height: 1vh;
+        background-color: rgba(0, 191, 255, 0);
+        border-radius: 10px;
+      }
+
+      &:first-child{
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      &:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s linear all;
+      }
+    }
+  }
+
+  &-main{
+    display: block;
+  }
+}
+
+.choose{
+  background-color: rgba(0, 191, 255, 1);
+}

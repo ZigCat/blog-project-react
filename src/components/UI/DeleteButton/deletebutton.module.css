@@ -1,0 +1,23 @@
+.deletebutton{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    transition: 0.2s linear all;
+}
+
+.deletebutton img{
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) saturate(100%) invert(54%) sepia(44%) saturate(5863%) hue-rotate(330deg) brightness(101%) contrast(91%);
+}
+
+.deletebutton:hover{
+    background-color: rgba(241,89,89, 1);
+    transition: 0.2s linear all;
+}
+
+.deletebutton img:hover{
+    filter: brightness(0) saturate(100%) invert(98%) sepia(13%) saturate(60%) hue-rotate(189deg) brightness(115%) contrast(100%);
+}

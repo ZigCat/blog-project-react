@@ -1,0 +1,39 @@
+.commentform{
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+
+  &-inner{
+    min-height: 16vh;
+  }
+
+  &-body{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+
+    &-avatar{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    &-text{
+      width: 90%;
+      margin-top: 30px;
+      margin-left: 30px;
+      flex-grow: 1;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    button{
+      margin-right: 50px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.textarea{
+    width: 90%;
+    resize: none;
+    font-size: 20px;
+    font-family: 'Istok Web', sans-serif;
+    overflow: hidden;
+    border: none;
+}
+
+.textarea:focus{
+    outline: none;
+}

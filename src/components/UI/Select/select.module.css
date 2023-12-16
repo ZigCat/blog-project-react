@@ -1,0 +1,9 @@
+.select{
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.select:focus{
+    outline-width: 1px;
+}
