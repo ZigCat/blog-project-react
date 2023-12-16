@@ -9,10 +9,12 @@ class ErrorBoundary extends Component {
         };
     }
 
+    static getDerivedStateFromError(error) {
+        return { message: error.message };
+    }
+
     componentDidCatch(error, errorInfo) {
-        console.error('Произошла ошибка:', error);
-        console.error('Информация об ошибке:', errorInfo);
-        this.setState({ message: 'Произошла ошибка' });
+        console.log('Произошла ошибка:', error);
     }
 
     render() {

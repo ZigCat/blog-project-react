@@ -101,7 +101,10 @@ class UserForm extends Component {
     }
 
     componentWillUnmount() {
-        this.props.setUser(this.state.newUser);
+        if(this.props.user.id === this.props.sessionUser.id
+            && Object.keys(this.state.newUser).length > 0){
+            this.props.setUser(this.state.newUser);
+        }
     }
 
     render() {

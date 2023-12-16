@@ -23,7 +23,7 @@ export default class UserService{
 
     static async update(form, userId){
         const headers = {
-            //Authorization: `Basic ${localStorage.getItem("auth")}`
+            Authorization: `Basic ${localStorage.getItem("auth")}`
         };
         const url = 'http://localhost:8080/api/user/update/'+userId;
         const response = await axios
