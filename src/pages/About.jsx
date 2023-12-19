@@ -34,10 +34,18 @@ const About = () => {
             <br />
             <div className="row">
                 <div className="col-md-6">
-                    {/* Добавьте еще контента или компонентов Bootstrap */}
+                    <h2>Адреса</h2>
+                    <ul className="list-group">
+                        <li className="list-group-item">г.Алматы, ул. Абая 52в</li>
+                        <li className="list-group-item">г.Алматы, ул. Манаса 34/1</li>
+                    </ul>
                 </div>
                 <div className="col-md-6">
-                    {/* Добавьте еще контента или компонентов Bootstrap */}
+                    <h2>Контакты</h2>
+                    <ul className="list-group">
+                        <li className="list-group-item">31552@iitu.edu.kz</li>
+                        <li className="list-group-item"><a href="https://github.com/ZigCat/blog-project-react" target="_blank">GitHub</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
