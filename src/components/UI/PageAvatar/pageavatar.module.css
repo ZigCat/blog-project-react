@@ -1,6 +1,6 @@
 .avatar{
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     margin: 10px;
     padding: 10px;
     border-radius: 50%;
@@ -15,4 +15,16 @@
     width: 100px;
     height: 100px;
     filter: invert(97%) sepia(74%) saturate(5825%) hue-rotate(183deg) brightness(125%) contrast(100%);
+}
+
+@media all and (max-width: 450px){
+    .avatar{
+        width: 70px;
+        height: 70px;
+    }
+
+    .avatar img{
+        width: 60px;
+        height: 60px;
+    }
 }

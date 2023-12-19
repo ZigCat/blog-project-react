@@ -89,3 +89,57 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .postitem{
+    &-inner{
+      width: 100vw;
+    }
+
+    &-title{
+      h3{
+        font-size: 35px;
+      }
+    }
+
+    &-main{
+      &-body{
+        margin: 15px 0 0 20px;
+        width: 60%;
+
+        &-top{
+          &-user{
+            flex-direction: column;
+          }
+
+          &-delete{
+            margin-right: 10px;
+          }
+        }
+
+        &-content{
+          p{
+            margin: 10px 0 0 0;
+            width: 50%;
+            word-break: break-all;
+          }
+
+          div{
+            &:last-child{
+              margin: 0 10px 0 0;
+            }
+          }
+
+          &-edit{
+            margin: 0 10px 0 0;
+            width: 60%;
+
+            button{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

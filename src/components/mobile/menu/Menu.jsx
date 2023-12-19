@@ -1,10 +1,12 @@
 import React, {useEffect, useState} from 'react';
 import {Link, useLocation, useNavigate} from "react-router-dom";
+import "./menu.scss";
 
 const Menu = ({closeMenu}) => {
     const location = useLocation();
     const [activePage, setActivePage] = useState('');
     const router = useNavigate();
+    const userIdRegex = /^\/user\/\d+$/;
 
     const logout = () => {
         localStorage.clear();
@@ -16,8 +18,8 @@ const Menu = ({closeMenu}) => {
     }, [location]);
 
     return (
-        <div className="mobmenu">
-            <div className="mobmenu-inner">
+        <div id="mobmenu" className="mobmenu" onClick={() => closeMenu()}>
+            <div id="mobmenu-body" className="mobmenu-inner" onClick={(e) => e.stopPropagation()}>
                 <nav className="mobmenu-nav">
                     <div className="mobmenu-logo">
                         <Link to="/">
@@ -34,7 +36,7 @@ const Menu = ({closeMenu}) => {
                             <img src="../search.svg" alt="Explore"/>
                         </Link>
                     </li>
-                    <li className={"mobmenu-nav-el"+(activePage === '/user' ? " active" : "")} onClick={() => router("/user/"+localStorage.getItem("id"))}>
+                    <li className={"mobmenu-nav-el" + (userIdRegex.test(activePage) ? " active" : "")} onClick={() => router("/user/"+localStorage.getItem("id"))}>
                         <img src="../user.svg" alt="Your page"/>
                     </li>
                     <li className={"mobmenu-nav-el"+(activePage === '/users' ? " active" : "")}>

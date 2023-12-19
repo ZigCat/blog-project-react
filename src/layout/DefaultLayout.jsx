@@ -2,15 +2,18 @@ import React, {useEffect, useState} from 'react';
 import {Link, useLocation, useNavigate} from "react-router-dom";
 import "./layout.scss";
 import PostModal from "../components/PostModal";
+import Avatar from "../components/UI/Avatar/Avatar";
+import Menu from "../components/mobile/menu/Menu";
 
 const Layout = ({children}) => {
     const location = useLocation();
     const [activePage, setActivePage] = useState('');
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [menu, setMenu] = useState(false);
     const router = useNavigate();
 
     const handleScroll = () => {
-        if (isModalOpen) {
+        if (isModalOpen || menu) {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = 'auto';
@@ -25,9 +28,17 @@ const Layout = ({children}) => {
         setIsModalOpen(false);
     };
 
-    useEffect(() => {
-        handleScroll();
-    }, [isModalOpen]);
+    const openMenu = () => {
+        setMenu(true);
+        document.getElementById("mobmenu").style.display = 'block';
+        document.getElementById("mobmenu-body").style.width = '30%';
+    }
+
+    const closeMenu = () => {
+        setMenu(false);
+        document.getElementById("mobmenu").style.display = 'none';
+        document.getElementById("mobmenu-body").style.width = '0';
+    }
     
     const logout = () => {
         localStorage.clear();
@@ -36,8 +47,12 @@ const Layout = ({children}) => {
 
     useEffect(() => {
         setActivePage(location.pathname);
-        console.log(location.pathname);
+        closeMenu();
     }, [location])
+
+    useEffect(() => {
+        handleScroll();
+    }, [isModalOpen, menu]);
 
 
     return ( 
@@ -46,6 +61,7 @@ const Layout = ({children}) => {
                 ? <PostModal closeModal={closeModal}/>
                 : ""
             }
+            <Menu closeMenu={closeMenu}/>
             <div className="layout-left">
                 <div className="container-head">
                     <div className="layout-left-inner">
@@ -88,6 +104,15 @@ const Layout = ({children}) => {
                     </div>
                 </div>
             </div>
+            <div className="layout-menu">
+                <div className="layout-menu-inner">
+                    <div className="layout-menu-opener" onClick={() => openMenu()}>
+                        <img src="../menu.svg" alt=""/>
+                    </div>
+                    <Avatar />
+                </div>
+            </div>
+
             <div className="layout-inner">
                 {children}
             </div>

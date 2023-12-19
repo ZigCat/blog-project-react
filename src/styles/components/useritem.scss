@@ -86,3 +86,44 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .useritem{
+    &-banner{
+      height: 23vh;
+    }
+
+    &-info{
+      &-main{
+        &-delete{
+          &-confirm{
+            span{
+              font-size: 14px;
+              width: 70%;
+            }
+
+            &-field{
+              flex-direction: column;
+              align-items: flex-start;
+
+              button{
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+        &-head{
+          div{
+            margin-top: -10px;
+          }
+        }
+
+        span{
+          span{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -21,3 +21,13 @@
 .deletebutton img:hover{
     filter: brightness(0) saturate(100%) invert(98%) sepia(13%) saturate(60%) hue-rotate(189deg) brightness(115%) contrast(100%);
 }
+
+@media all and (max-width: 450px) {
+    .deletebutton:hover{
+        background: none;
+    }
+
+    .deletebutton img:hover{
+        filter: brightness(0) saturate(100%) invert(54%) sepia(44%) saturate(5863%) hue-rotate(330deg) brightness(101%) contrast(91%);
+    }
+}

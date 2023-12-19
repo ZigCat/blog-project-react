@@ -14,3 +14,13 @@ body{
   width: 100px;
   margin: 0 auto;
 }
+
+.container-menu{
+  width: 50px;
+}
+
+@media all and (max-width: 450px) {
+  .container{
+    width: 95%;
+  }
+}

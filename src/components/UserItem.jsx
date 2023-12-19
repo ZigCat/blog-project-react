@@ -55,9 +55,9 @@ const UserItem = ({user, sessionUser, setIsEdit}) => {
                             </div>
                             <h4>@{user.username}</h4>
                             <span>
-                            <img src="../calendar.svg" alt=""/>
-                            <span>Зарегистрировался {user.creationDate}</span>
-                        </span>
+                                <img src="../calendar.svg" alt=""/>
+                                <span>Зарегистрировался {user.creationDate}</span>
+                            </span>
                             {sessionUser.id === user.id || sessionUser.role === "ADMIN"
                                 ?
                                 <div className="useritem-info-main-delete">

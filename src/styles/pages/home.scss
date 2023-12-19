@@ -50,3 +50,23 @@
 .choose{
   background-color: rgba(0, 191, 255, 1);
 }
+
+@media all and (max-width: 450px){
+  .homepage{
+    width: 100vw;
+
+    &-inner{
+
+    }
+
+    &-top{
+      width: 100vw;
+
+      &-category{
+        h2{
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}

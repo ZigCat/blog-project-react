@@ -23,3 +23,13 @@
     filter: brightness(0) saturate(100%) invert(0%) sepia(6%) saturate(7500%) hue-rotate(334deg) brightness(97%) contrast(105%);
     transition: 0.2s linear all;
 }
+
+@media all and (max-width: 450px){
+    .editbutton:hover{
+        background: none;
+    }
+
+    .editbutton img:hover{
+        filter: brightness(0) saturate(100%) invert(55%) sepia(0%) saturate(0%) hue-rotate(205deg) brightness(98%) contrast(80%);
+    }
+}

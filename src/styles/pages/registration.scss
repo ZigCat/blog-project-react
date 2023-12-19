@@ -59,3 +59,63 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .registration{
+
+    &-inner{
+      width: 100%;
+      margin: 2vh auto;
+    }
+
+    &-title{
+      h1{
+        font-size: 30px;
+        font-weight: 600;
+      }
+    }
+
+    &-body{
+      width: 95%;
+
+      &-item{
+        flex-direction: column;
+        margin-bottom: 5px;
+        input{
+          width: 90%;
+        }
+        span{
+          font-size: 20px;
+        }
+
+        &:last-child{
+          align-items: flex-start;
+          input{
+            margin: 10px 10px 0 0;
+            width: 30px;
+          }
+          label{
+            font-size: 20px;
+            margin-right: -20px;
+          }
+        }
+      }
+
+      &-el{
+        flex-direction: column;
+        span{
+          font-size: 20px;
+        }
+      }
+
+      &-buttons{
+        flex-direction: column;
+
+        button{
+          margin-bottom: 10px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

@@ -18,3 +18,17 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .explore{
+    &-head{
+      input{
+        width: 95%;
+      }
+
+      select{
+        width: 85%;
+      }
+    }
+  }
+}

@@ -44,3 +44,23 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .userrecord{
+    width: 100vw;
+
+    &-inner{
+      min-height: 12vh;
+      align-items: flex-start;
+    }
+
+    &-info{
+      margin: 15px 0;
+      flex-direction: column;
+      align-items: flex-start;
+      h4{
+        margin: 0 10px;
+      }
+    }
+  }
+}

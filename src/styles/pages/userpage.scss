@@ -16,3 +16,15 @@
     }
   }
 }
+
+@media all and (max-width: 450px) {
+  .userpage{
+    &-posts{
+      &-title{
+        h3{
+          font-size: 9vw;
+        }
+      }
+    }
+  }
+}

@@ -75,3 +75,46 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .commentrecord{
+    width: 100vw;
+
+    &-body{
+      &-top{
+        &-user{
+          flex-direction: column;
+          align-items: flex-start;
+
+          h4{
+            margin: 0;
+          }
+
+          span{
+            margin: 0;
+          }
+        }
+
+        div{
+          &:last-child{
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+
+      &-content{
+        p{
+          width: 100px;
+          margin: 0;
+          word-break: break-all;
+        }
+
+        div{
+          &:last-child{
+            margin: 0 10px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

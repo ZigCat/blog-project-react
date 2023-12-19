@@ -37,3 +37,22 @@
     }
   }
 }
+
+@media all and (max-width: 450px){
+  .postform{
+
+    &-inner{
+
+    }
+
+    &-body{
+      &-text{
+        margin-left: 5px;
+
+        textarea{
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
